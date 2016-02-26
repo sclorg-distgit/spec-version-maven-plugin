@@ -4,7 +4,7 @@
 
 Name:          %{?scl_prefix}%{pkg_name}
 Version:       1.2
-Release:       7.1%{?dist}
+Release:       7.2%{?dist}
 Summary:       Spec Version Maven Plugin
 License:       CDDL or GPLv2 with exceptions
 URL:           http://glassfish.java.net/
@@ -26,7 +26,7 @@ BuildRequires: %{?scl_prefix}mvn(org.codehaus.plexus:plexus-resources)
 BuildRequires: %{?scl_prefix_java_common}mvn(junit:junit)
 BuildRequires: %{?scl_prefix}mvn(org.apache.felix:maven-bundle-plugin)
 
-BuildRequires: %{?scl_prefix_java_common}maven-local
+BuildRequires: %{?scl_prefix}maven-local
 BuildRequires: %{?scl_prefix}maven-plugin-build-helper
 BuildRequires: %{?scl_prefix}maven-plugin-plugin
 
@@ -74,6 +74,9 @@ set -e -x
 %doc LICENSE.txt
 
 %changelog
+* Mon Feb 08 2016 Michal Srb <msrb@redhat.com> - 1.2-7.2
+- Fix BR on maven-local & co.
+
 * Mon Jan 11 2016 Mikolaj Izdebski <mizdebsk@redhat.com> - 1.2-7.1
 - SCL-ize package
 
