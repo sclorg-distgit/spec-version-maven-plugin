@@ -3,7 +3,7 @@
 
 Name:          %{?scl_prefix}spec-version-maven-plugin
 Version:       1.2
-Release:       9.1%{?dist}
+Release:       9.2%{?dist}
 Summary:       Spec Version Maven Plugin
 License:       CDDL or GPLv2 with exceptions
 URL:           http://glassfish.java.net/
@@ -65,6 +65,9 @@ sed -i 's/\r//' LICENSE.txt
 %license LICENSE.txt
 
 %changelog
+* Thu Jun 22 2017 Michael Simacek <msimacek@redhat.com> - 1.2-9.2
+- Mass rebuild 2017-06-22
+
 * Wed Jun 21 2017 Java Maintainers <java-maint@redhat.com> - 1.2-9.1
 - Automated package import and SCL-ization
 
